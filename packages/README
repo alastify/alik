@@ -1,0 +1,14 @@
+Contains files with names like
+
+[dist].packages[sfx]
+
+where [dist] is the linux distribution name and [sfx] is optional suffix.
+
+fedora.packages
+debian.packages1
+debian.packages2
+
+first file contains names of packages for Fedora distribution, the other two files are meant for Debian Linux
+
+Structure of a file is package name per row.
+

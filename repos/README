@@ -1,0 +1,18 @@
+Contains files like 
+
+[dist].[name].repo
+
+where [dist] is name of linux distribution and [name] is the name of repository file, e.g.
+
+fedora.virtualbox.repo
+debian.virtualbox.repo
+
+Repo files are then renamed based upon a linux distribution.
+
+There can be also a gpg file containing urls to asc keys to be imported
+
+[dist].gpg
+
+One url per row.
+
+

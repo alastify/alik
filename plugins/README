@@ -1,0 +1,6 @@
+Each directory is named after linux distribution
+
+It is recommended to use shell script setup.sh to add another distro or to activate or deactivate plugins.
+
+
+

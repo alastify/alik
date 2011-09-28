@@ -1,0 +1,5 @@
+[google-earth]
+name=google-earth
+baseurl=http://dl.google.com/linux/earth/rpm/stable/i386
+enabled=1
+gpgcheck=1
