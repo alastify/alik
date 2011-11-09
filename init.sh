@@ -7,7 +7,7 @@ REPOPREF=""
 #
 BASH=/bin/bash
 # temp dir for files
-TMPDIR=/tmp/$$workstation
+TMPDIR=/tmp/alik.$$
 # generated file with package list for installation
 PKGLIST=$TMPDIR/packages/list
 ## will be overwritten # command for updating repository, see bellow
