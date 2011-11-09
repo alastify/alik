@@ -43,7 +43,7 @@ function untar_archive {
 
 function kompilace {
 	# destination
-	OUTPUT="./release/afterli.sh"
+	OUTPUT="./release/alik.sh"
 	# list of shell scripts to combine together, order is mandatory
 	skripty=( \
 		"lib.sh" \
