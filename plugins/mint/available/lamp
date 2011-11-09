@@ -1,0 +1,17 @@
+#!/bin/bash
+
+/etc/apache2/apache2.conf
+#Include sites-enabled/
+Include /home/mist/etc/apache/vhosts
+
+/etc/hosts
+127.0.2.1	keep tmp webcore myapp
+
+/etc/php5/apache2/conf.d/xdebug.ini 
+[xdebug]
+xdebug.remote_enable=On
+xdebug.remote_host=localhost
+xdebug.remote_port=9000
+xdebug.remote_handler=dbgp
+
+

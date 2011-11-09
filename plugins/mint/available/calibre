@@ -1,0 +1,11 @@
+#!/bin/bash
+
+curdir=`pwd`
+
+cd /tmp
+wget -O- http://status.calibre-ebook.com/dist/src | tar xvz 
+cd calibre*
+python setup.py install
+
+cd $curdir
+

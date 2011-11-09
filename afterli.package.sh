@@ -17,5 +17,9 @@ echo "Packages: $BALICKY"
 if [ $DEBUG -eq 0 ]; then
 	$PACUPDATE
 	$PACMAN $BALICKY
+	if [ $? -gt 0 ]; then
+		hmm "Package installation error"
+		exit 1
+	fi
 fi
 

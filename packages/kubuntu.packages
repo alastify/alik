@@ -14,25 +14,17 @@ php5-curl
 php-pear 
 php5-xdebug 
 php5-mcrypt 
-filezilla 
 subversion 
 git 
-gitg 
 ocaml 
 liblablgtk2-ocaml-dev 
 wine 
-gnote 
 gimp 
 scummvm 
 stellarium 
-rabbitvcs-nautilus 
-meld
 build-essential
 
-gimp
-
 mc
-shotwell
 mplayer
 vlc
 phpmyadmin
@@ -74,4 +66,16 @@ avr-libc
 gcc-avr
 picard
 arduino
+kdenlive
+firefox
 
+krusader
+kompare
+krename
+okteta
+kdesvn
+kdiff3
+
+sshfs
+freemind
+cifs-utils

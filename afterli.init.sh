@@ -28,7 +28,7 @@ fi
 
 if [ $# -eq 0 ]; then
 	## list need to be updated manualy, according to cases bellow
-	err "Missing distribution name [fedora|debian|ubuntu|mint] or [make]"
+	err "Missing distribution name [fedora|debian|ubuntu|kubuntu|mint] or [make]"
 	exit
 else
 	case "$1" in
@@ -48,6 +48,13 @@ else
 		;;
 		ubuntu )
 			hmm "Linux distribution: Ubuntu"
+			PACUPDATE="apt-get update"
+			PACMAN="apt-get install"
+			REPODIR="${REPOPREF}/etc/apt/sources.list.d"
+			REPOEXT="list"
+		;;
+		kubuntu )
+			hmm "Linux distribution: Kubuntu"
 			PACUPDATE="apt-get update"
 			PACMAN="apt-get install"
 			REPODIR="${REPOPREF}/etc/apt/sources.list.d"
