@@ -1,0 +1,17 @@
+#!/bin/bash
+
+FDIR="unison-2.40.61"
+FILE="$FDIR.tar.gz"
+
+curdir=`pwd`
+
+wget -O /tmp/$FILE http://tmp.a-las.net/repo/noarch/$FILE && \
+cd /tmp && \
+tar -zxvf /tmp/$FILE && \
+cd /tmp/$FDIR && \
+ocaml mkProjectInfo.ml > Makefile.ProjectInfo && \
+make && \
+cp ./unison /usr/local/bin/unison
+
+cd $curdir
+

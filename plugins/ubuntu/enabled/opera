@@ -1,0 +1,8 @@
+#!/bin/bash
+
+FILE=opera_11.52.1100_i386.deb
+
+wget -O  /tmp/$FILE http://tmp.a-las.net/repo/debian/$FILE
+
+gdebi /tmp/$FILE
+

@@ -1,10 +1,10 @@
 #!/bin/bash
 
-. afterli.lib.sh
-. afterli.init.sh
-. afterli.before.sh
-. afterli.repo.sh
-. afterli.package.sh
-. afterli.after.sh
-. afterli.plugins.sh
+. lib.sh
+. init.sh
+. before.sh
+. repo.sh
+. package.sh
+. after.sh
+. plugins.sh
 

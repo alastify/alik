@@ -1,0 +1,6 @@
+#!/bin/bash
+
+add-apt-repository ppa:jonoomph/openshot-edge
+apt-get update
+apt-get install openshot openshot-doc
+

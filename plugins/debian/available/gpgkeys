@@ -1,8 +1,0 @@
-#!/bin/bash
-
-wget -O- -q http://mozilla.debian.net/archive.asc | gpg --import
-gpg --export -a 06C4AE2A | apt-key add -
-
-wget -O- -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc | gpg --import
-gpg --export -a 98AB5139 | apt-key add -
-
