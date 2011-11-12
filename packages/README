@@ -11,4 +11,10 @@ debian.packages2
 first file contains names of packages for Fedora distribution, the other two files are meant for Debian Linux
 
 Structure of a file is package name per row.
+If the name of packgage begins with - it will be uninstalled. E.g.
+
+gnote
+-tomboy
+
+Package gnote will be installed and package tomboy will be uninstalled
 

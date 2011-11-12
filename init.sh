@@ -8,12 +8,15 @@ REPOPREF=""
 BASH=/bin/bash
 # temp dir for files
 TMPDIR=/tmp/alik.$$
-# generated file with package list for installation
+# generated file with package list for installation/uninstallation
 PKGLIST=$TMPDIR/packages/list
+UNPKGLIST=$TMPDIR/packages/unlist
 ## will be overwritten # command for updating repository, see bellow
 PACUPDATE=0
 ## will be overwritten # command for installing packages, see bellow
 PACMAN=0
+## will be overwritten # command for uninstalling packages, see bellow
+UNPACMAN=0
 ## will be overwritten # (code) name of a Linux distribution, see bellow
 DISTRO=0
 ## will be overwritten # default dir for storing repo files, see bellow
@@ -36,6 +39,7 @@ else
 			hmm "Linux distribution: Fedora"
 			PACUPDATE="yum update"
 			PACMAN="yum install"
+			UNPACMAN="yum remove"
 			REPODIR="${REPOPREF}/etc/yum.repos.d"
 			REPOEXT="repo"
 		;;
@@ -43,6 +47,7 @@ else
 			hmm "Linux distribution: Debian"
 			PACUPDATE="apt-get update"
 			PACMAN="apt-get install"
+			UNPACMAN="apt-get remove"
 			REPODIR="${REPOPREF}/etc/apt/sources.list.d"
 			REPOEXT="list"
 		;;
@@ -50,6 +55,7 @@ else
 			hmm "Linux distribution: Ubuntu"
 			PACUPDATE="apt-get update"
 			PACMAN="apt-get install"
+			UNPACMAN="apt-get remove"
 			REPODIR="${REPOPREF}/etc/apt/sources.list.d"
 			REPOEXT="list"
 		;;
@@ -57,6 +63,7 @@ else
 			hmm "Linux distribution: Kubuntu"
 			PACUPDATE="apt-get update"
 			PACMAN="apt-get install"
+			UNPACMAN="apt-get remove"
 			REPODIR="${REPOPREF}/etc/apt/sources.list.d"
 			REPOEXT="list"
 		;;
@@ -64,6 +71,7 @@ else
 			hmm "Linux distribution: Mint"
 			PACUPDATE="apt-get update"
 			PACMAN="apt-get install"
+			UNPACMAN="apt-get remove"
 			REPODIR="${REPOPREF}/etc/apt/sources.list.d"
 			REPOEXT="list"
 		;;
@@ -89,6 +97,6 @@ if [ "$DISTRO" != "0" ]; then
 	fi
 fi
 
-#outputs: PACUPDATE, PACMAN, DISTRO, REPODIR, REPOEXT
+#outputs: PACUPDATE, PACMAN, UNPACMAN, DISTRO, REPODIR, REPOEXT
 
 
