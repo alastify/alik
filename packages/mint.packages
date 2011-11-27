@@ -72,9 +72,9 @@ libpoppler-dev
 python-qt4-dev
 libqt4-dev
 
-libx264-106
+
 libmp3lame0
-libavformat-extra-52
+
 
 avr-libc
 gcc-avr
