@@ -2,7 +2,7 @@
 
 FILE=opera_11.51.1087_i386.deb
 
-wget -O  /tmp/$FILE http://tmp.a-las.net/repo/debian/$FILE
+wget -O  /tmp/$FILE http://tmp.a-las.net/repo/mint/$FILE
 
 gdebi /tmp/$FILE
 

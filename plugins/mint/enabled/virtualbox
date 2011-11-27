@@ -1,6 +1,6 @@
 #!/bin/bash
 
 usermod -a -G vboxusers mist
-service vboxdrv setup
+
 
 

@@ -78,5 +78,10 @@ libavformat-extra-52
 
 avr-libc
 gcc-avr
+arduino
+
+eclipse
+qt4-designer
+
 picard
 
