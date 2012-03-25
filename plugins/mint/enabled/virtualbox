@@ -1,6 +1,0 @@
-#!/bin/bash
-
-usermod -a -G vboxusers mist
-
-
-
