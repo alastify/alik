@@ -1,0 +1,8 @@
+#!/bin/bash
+
+pear upgrade-all
+pear config-set auto_discover 1
+pear install -a pear.phpunit.de/PHPUnit
+pear install phpunit/PHPUnit_SkeletonGenerator
+
+pear upgrade PhpDocumentor

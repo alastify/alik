@@ -1,0 +1,15 @@
+#!/bin/bash
+
+su mist
+
+if [ "$SSH_AUTH_SOCK" ]; then
+    if [ -e ~/.ssh/id_rsa ]; then
+
+    fi
+fi
+
+ssh-keygen
+ssh-add
+
+exit
+
