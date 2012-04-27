@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILE=netbeans-7.0.1-ml-php-linux.sh
+FILE=netbeans-7.1-ml-php-linux.sh
 
 wget -O  /tmp/$FILE http://tmp.a-las.net/repo/noarch/$FILE
 

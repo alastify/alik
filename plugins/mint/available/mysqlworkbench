@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILE=mysql-workbench-gpl-5.2.35-1ubu1004-i386.deb
+FILE=mysql-workbench-gpl-5.2.38-1ubu1104-amd64.deb
 
 wget -O  /tmp/$FILE http://tmp.a-las.net/repo/mint/$FILE
 

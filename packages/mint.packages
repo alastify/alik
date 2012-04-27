@@ -1,3 +1,4 @@
+curl
 ssh
 apache2 
 php5 
@@ -14,9 +15,11 @@ php5-curl
 php-pear 
 php5-xdebug 
 php5-mcrypt 
-sun-java6-jdk 
-sun-java6-plugin 
-filezilla 
+
+-sun-java6-jdk 
+-sun-java6-plugin 
+-filezilla 
+
 subversion 
 git 
 gitg 
@@ -24,17 +27,16 @@ ocaml
 liblablgtk2-ocaml-dev 
 wine 
 gnote 
-gimp 
+-gimp 
 scummvm 
 stellarium 
-rabbitvcs-nautilus 
-meld
+-rabbitvcs-nautilus 
+-meld
 build-essential
-virtualbox-4.1
-gimp
+-virtualbox-4.1
 
 mc
-shotwell
+-shotwell
 mplayer
 vlc
 phpmyadmin
@@ -85,3 +87,11 @@ qt4-designer
 
 picard
 
+chromium-browser
+smbfs
+
+kdiff3
+krusader
+krename
+krfb
+recorditnow
